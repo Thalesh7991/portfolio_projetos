@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currículo — Thales Henrique Dias Pinto</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 10pt;
+            color: #111;
+            background: #e8e8e8;
+            line-height: 1.5;
+        }
+
+        .page {
+            background: #fff;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 24px auto;
+            padding: 18mm 18mm 16mm;
+            box-shadow: 0 2px 24px rgba(0,0,0,.18);
+        }
+
+        /* ---- HEADER ---- */
+        .header {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #111;
+            margin-bottom: 14px;
+        }
+        .header h1 {
+            font-size: 19pt;
+            font-weight: bold;
+            letter-spacing: .3px;
+            margin-bottom: 5px;
+        }
+        .header .contact {
+            font-size: 9pt;
+            color: #333;
+            line-height: 1.7;
+        }
+        .header a { color: #111; text-decoration: none; }
+
+        /* ---- SECTIONS ---- */
+        .section { margin-top: 13px; }
+        .section-title {
+            font-size: 9.5pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-bottom: 1px solid #111;
+            padding-bottom: 2px;
+            margin-bottom: 9px;
+        }
+
+        /* ---- EXPERIENCE ---- */
+        .job { margin-bottom: 11px; }
+        .job:last-child { margin-bottom: 0; }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .job-company { font-weight: bold; font-size: 10pt; }
+        .job-date { font-size: 9pt; color: #444; white-space: nowrap; }
+        .job-title {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        ul.bullets { list-style: disc; padding-left: 15px; }
+        ul.bullets li {
+            font-size: 9.5pt;
+            margin-bottom: 2px;
+            line-height: 1.45;
+        }
+
+        /* ---- EDUCATION ---- */
+        .edu-item { margin-bottom: 7px; }
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .edu-title { font-weight: bold; font-size: 9.5pt; }
+        .edu-date { font-size: 9pt; color: #444; white-space: nowrap; }
+        .edu-institution { font-style: italic; font-size: 9pt; color: #333; }
+
+        /* ---- COMPETÊNCIAS ---- */
+        .comp-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 12px;
+            list-style: disc;
+            padding-left: 14px;
+        }
+        .comp-list li { font-size: 9.5pt; line-height: 1.55; }
+
+        /* ---- STACK ---- */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 7px 20px;
+        }
+        .stack-group h4 {
+            font-size: 9.5pt;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .stack-group p {
+            font-size: 9pt;
+            color: #333;
+            line-height: 1.45;
+        }
+
+        /* ---- PRINT ---- */
+        @media print {
+            body { background: #fff; }
+            .page {
+                margin: 0;
+                padding: 14mm 16mm 12mm;
+                box-shadow: none;
+                min-height: auto;
+            }
+            a { color: #111 !important; text-decoration: none !important; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Thales Henrique Dias Pinto</h1>
+        <div class="contact">
+            thalesh1997@gmail.com &nbsp;·&nbsp; +55 (14) 98809-8150 &nbsp;·&nbsp; Botucatu, SP<br>
+            <a href="https://www.linkedin.com/in/thales-henrique-dias/">linkedin.com/in/thales-henrique-dias</a>
+            &nbsp;·&nbsp;
+            <a href="https://thalesh7991.github.io/portfolio_projetos/">thalesh7991.github.io/portfolio_projetos</a>
+        </div>
+    </div>
+
+    <!-- RESUMO -->
+    <div class="section">
+        <div class="section-title">Resumo Profissional</div>
+        <p style="font-size:9.5pt;line-height:1.6;">
+            Cientista de Dados com foco em sistemas de recomendação e Machine Learning aplicado a marketplaces.
+            Atualmente na <strong>Frete.com</strong> — maior plataforma de transporte rodoviário da América Latina —,
+            onde desenvolvo algoritmos que recomendam fretes para motoristas e motoristas para fretes, com impacto
+            direto em métricas de engajamento e CTR numa base de 900 mil+ motoristas ativos.
+        </p>
+        <br>
+        <p style="font-size:9.5pt;line-height:1.6;">
+            Experiência anterior na <strong>Radix Engenharia e Software</strong> em projetos de alto impacto para
+            <strong>Celanese</strong> e <strong>Petrobras</strong>: desenvolvimento do <strong>JO.AI</strong>
+            (solução LLM premiada globalmente, adotada em 30+ plantas industriais) e modelo de classificação de
+            textos para identificação de incidentes críticos em operações offshore. Também atuei como professor
+            de pós-graduação em Ciência de Dados na Comunidade DS.
+        </p>
+        <br>
+        <p style="font-size:9.5pt;line-height:1.6;">
+            Combino modelagem técnica com visão de produto: transformo problemas de negócio em soluções de dados
+            orientadas por métricas, experimentação e geração de valor mensurável.
+        </p>
+    </div>
+
+    <!-- EXPERIÊNCIA -->
+    <div class="section">
+        <div class="section-title">Experiência Profissional</div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Frete.com</span>
+                <span class="job-date">2026 — Presente</span>
+            </div>
+            <div class="job-title">Cientista de Dados</div>
+            <ul class="bullets">
+                <li>Desenvolvimento de sistemas de recomendação de fretes para motoristas e de motoristas para fretes, em marketplace com 900 mil+ motoristas ativos e 25 mil+ transportadoras.</li>
+                <li>Responsável por melhorar métricas de engajamento da plataforma: CTR, taxa de aceitação e qualidade dos matches driver–frete.</li>
+                <li>Aplicação de modelos de ranking, filtragem colaborativa e content-based filtering para personalização do feed de fretes por perfil de motorista.</li>
+                <li>Experimentação e análise A/B para validar impacto de modelos em métricas de negócio antes de rollout em produção.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Radix Engenharia e Software</span>
+                <span class="job-date">Jan/2023 — 2026</span>
+            </div>
+            <div class="job-title">Cientista de Dados</div>
+            <ul class="bullets">
+                <li>Atuei no desenvolvimento do <strong>JO.AI</strong>, solução baseada em LLMs premiada globalmente, utilizada em mais de 30 plantas da Celanese para integrar fluxos de trabalho e acelerar decisões operacionais.</li>
+                <li>Consultor de Data Science para a <strong>Petrobras</strong>: criação de modelo de classificação de textos para identificar incidentes críticos em operações offshore, reduzindo tempo de resposta e aprimorando segurança operacional.</li>
+                <li>Desenvolvimento de modelos preditivos para previsão de custos, otimização de planejamento e análises orientadas a eficiência operacional.</li>
+                <li>Construção de pipelines de dados e integração de modelos em ambientes produtivos.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Comunidade DS</span>
+                <span class="job-date">Mar/2024 — Dez/2024</span>
+            </div>
+            <div class="job-title">Professor de Pós-Graduação em Ciência de Dados</div>
+            <ul class="bullets">
+                <li>Disciplinas práticas focadas no desenvolvimento de projetos completos de DS com aplicação real em negócios.</li>
+                <li>Mentoria no ciclo completo do projeto: definição do problema, modelagem preditiva, deploy e monitoramento.</li>
+                <li>Ensino orientado a ML aplicado, métricas de negócio, storytelling analítico e boas práticas de produção.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">CAIO INDUSCAR</span>
+                <span class="job-date">Dez/2019 — Dez/2022</span>
+            </div>
+            <div class="job-title">Analista de Dados</div>
+            <ul class="bullets">
+                <li>Liderança de projetos analíticos para otimizar PPCP, reduzindo ineficiências e apoiando decisões de estoque, suprimentos e capacidade produtiva.</li>
+                <li>Desenvolvimento de análises e modelos para a área comercial: identificação de oportunidades de mercado e padrões de compra que apoiaram estratégias de vendas.</li>
+                <li>Integrante da equipe de People Analytics: análises estatísticas de desempenho, turnover e engajamento orientadas a ações de RH.</li>
+                <li>Construção de dashboards, automações e relatórios para tomada de decisão executiva.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FORMAÇÃO -->
+    <div class="section">
+        <div class="section-title">Formação Acadêmica</div>
+
+        <div class="edu-item">
+            <div class="edu-header">
+                <span class="edu-title">Pós-Graduação em Ciência de Dados</span>
+                <span class="edu-date">2022 — Presente</span>
+            </div>
+            <div class="edu-institution">Comunidade DS</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-header">
+                <span class="edu-title">Bacharelado em Sistemas de Informação</span>
+                <span class="edu-date">2019 — 2022</span>
+            </div>
+            <div class="edu-institution">UNESP — Universidade Estadual Paulista · São Paulo, BRA</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-header">
+                <span class="edu-title">Bacharelado Interdisciplinar em Ciência e Tecnologia</span>
+                <span class="edu-date">2015 — 2018</span>
+            </div>
+            <div class="edu-institution">Universidade Federal do Pampa — UNIPAMPA · Rio Grande do Sul, BRA</div>
+        </div>
+    </div>
+
+    <!-- COMPETÊNCIAS -->
+    <div class="section">
+        <div class="section-title">Competências-Chave</div>
+        <ul class="comp-list">
+            <li>Sistemas de recomendação (collaborative, content-based, ranking)</li>
+            <li>Machine Learning aplicado a marketplaces e produto</li>
+            <li>Otimização de métricas de engajamento e CTR</li>
+            <li>Experimentação e A/B Testing</li>
+            <li>Modelagem preditiva (classificação, regressão, churn)</li>
+            <li>Transformação de problemas de negócio em soluções de dados</li>
+            <li>Storytelling analítico e comunicação com stakeholders</li>
+            <li>Construção e avaliação de métricas de impacto</li>
+            <li>Engenharia de dados (pipelines, deploy, MLOps)</li>
+            <li>Estatística aplicada e análise exploratória</li>
+        </ul>
+    </div>
+
+    <!-- STACK -->
+    <div class="section">
+        <div class="section-title">Stack Técnica</div>
+        <div class="stack-grid">
+            <div class="stack-group">
+                <h4>Linguagens & Análise</h4>
+                <p>Python (Pandas, NumPy, Scikit-Learn, Statsmodels) · SQL</p>
+            </div>
+            <div class="stack-group">
+                <h4>Recomendação & Ranking</h4>
+                <p>Collaborative Filtering · Content-Based · Learn to Rank · A/B Testing</p>
+            </div>
+            <div class="stack-group">
+                <h4>Machine Learning</h4>
+                <p>XGBoost · LightGBM · CatBoost · RandomForest · Séries Temporais</p>
+            </div>
+            <div class="stack-group">
+                <h4>Engenharia & Deploy</h4>
+                <p>FastAPI · Docker · Git/GitHub · MLflow · MLOps básico</p>
+            </div>
+            <div class="stack-group">
+                <h4>Experimentação</h4>
+                <p>Testes A/B · Testes de Hipótese · Análise de impacto de métricas</p>
+            </div>
+            <div class="stack-group">
+                <h4>Visualização & Ferramentas</h4>
+                <p>Plotly · Seaborn · Matplotlib · Metabase · Streamlit</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

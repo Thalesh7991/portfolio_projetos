@@ -1,759 +1,593 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="pt-BR">
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thales Henrique — Cientista de Dados especializado em NLP, LLM e Machine Learning aplicado a problemas reais de negócio.">
+    <title>Thales Henrique — Cientista de Dados</title>
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Thales Henrique</title>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TKB4NTRPEC"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKB4NTRPEC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TKB4NTRPEC');
+    </script>
 
-		gtag('config', 'G-TKB4NTRPEC');
-		</script>
+    <link rel="icon" type="image/png" href="assets/images/portfolio/science_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/images/portfolio/science_icon.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<body>
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">TH<span>.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#stack" class="nav-link">Stack</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li>
+                    <a href="https://github.com/Thalesh7991" target="_blank" class="nav-link nav-link-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Olá, eu sou<br>
+                    <span class="hero-name">Thales <span class="accent">Henrique</span></span>
+                </h1>
+                <p class="hero-role">Cientista de Dados</p>
+                <p class="hero-description">
+                    Construo produtos de dados que criam valor em marketplaces de dois lados. Na <strong>Frete.com</strong> — maior plataforma de transporte rodoviário da América Latina — desenvolvo sistemas de recomendação que conectam motoristas aos melhores fretes e fretes aos melhores motoristas, melhorando <strong>CTR</strong> e <strong>engajamento</strong> numa base de 900 mil+ motoristas.
+                </p>
+                <div class="hero-actions">
+                    <a href="assets/download/curriculo.html" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Currículo
+                    </a>
+                    <a href="https://github.com/Thalesh7991" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/thales-henrique-dias/" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Anos de experiência</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projetos entregues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Empresas de tecnologia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                    <img src="assets/perfil.jfif" alt="Foto de Thales Henrique">
+                </div>
+                <div class="hero-image-bg"></div>
+            </div>
+        </div>
+    </section>
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sobre mim</span>
+                <h2 class="section-title">Quem sou eu</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Sou Cientista de Dados com foco em sistemas de recomendação e Machine Learning aplicado a marketplaces. Atualmente na <strong>Frete.com</strong>, maior plataforma de transporte rodoviário da América Latina, onde construo algoritmos que recomendam fretes para motoristas e motoristas para fretes — melhorando métricas de engajamento, CTR e qualidade dos matches numa base de mais de 900 mil motoristas ativos.
+                    </p>
+                    <p>
+                        Anteriormente, atuei na <strong>Radix Engenharia e Software</strong> desenvolvendo soluções de dados para a <strong>PETROBRAS</strong> e em projeto internacional. Também fui professor do programa de pós-graduação em Ciência de Dados da <strong>Comunidade DS</strong>, maior comunidade de ensino de DS do Brasil.
+                    </p>
+                    <p>
+                        Minha formação combina <strong>Sistemas de Informação (UNESP)</strong> com uma base interdisciplinar em <strong>Ciência e Tecnologia (UNIPAMPA)</strong>, o que me dá visão ampla: da modelagem técnica ao impacto estratégico no negócio.
+                    </p>
+                    <div class="about-contact">
+                        <a href="mailto:thalesh1997@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> thalesh1997@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/thales-henrique-dias/" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i> linkedin.com/in/thales-henrique-dias
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </head>
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <p class="section-subtitle">Soluções end-to-end com impacto real de negócio</p>
+            </div>
 
-			        <div class="container">
+            <div class="featured-projects">
 
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Thales Henrique</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
+                <div class="featured-card">
+                    <div class="featured-card-image">
+                        <img src="assets/images/portfolio/data_architecture.jpg" alt="Churn: Do Notebook à Produção">
+                        <div class="featured-card-overlay">
+                            <span class="project-category">MLOps · Produção</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-content">
+                        <h3>Churn: Do Notebook à Produção</h3>
+                        <p>Pipeline completo de Machine Learning desde a análise exploratória até o deploy em produção.
+                            Demonstra boas práticas de MLOps: versionamento de modelos, monitoramento e API para consumo
+                            em tempo real.</p>
+                        <div class="project-tools">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">MLflow</span>
+                        </div>
+                        <a href="https://github.com/Thalesh7991/ml-productization-journey" target="_blank"
+                            class="btn btn-primary btn-sm">
+                            <i class="fab fa-github"></i> Ver projeto
+                        </a>
+                    </div>
+                </div>
 
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-			                    <li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
+                <div class="featured-card">
+                    <div class="featured-card-image">
+                        <img src="assets/images/portfolio/clustering.jpg" alt="Clusterização de Clientes">
+                        <div class="featured-card-overlay">
+                            <span class="project-category">Clusterização · Negócio</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-content">
+                        <h3>Clusterização de Clientes — Insiders</h3>
+                        <p>Segmentação de base de clientes de um e-commerce para identificar o grupo de maior valor
+                            (Insiders). O modelo permite ao time de marketing personalizar campanhas e aumentar o
+                            LTV dos clientes premium.</p>
+                        <div class="project-tools">
+                            <span class="tag">Python</span>
+                            <span class="tag">K-Means</span>
+                            <span class="tag">UMAP</span>
+                            <span class="tag">Metabase</span>
+                            <span class="tag">AWS RDS</span>
+                        </div>
+                        <a href="https://github.com/Thalesh7991/Insiders-Customers" target="_blank"
+                            class="btn btn-primary btn-sm">
+                            <i class="fab fa-github"></i> Ver projeto
+                        </a>
+                    </div>
+                </div>
 
-		    <div class="clearfix"></div>
+                <div class="featured-card">
+                    <div class="featured-card-image">
+                        <img src="assets/images/portfolio/test_ab_image.jpg" alt="Teste A/B">
+                        <div class="featured-card-overlay">
+                            <span class="project-category">Estatística · Decisão</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-content">
+                        <h3>Teste A/B — Electronic House</h3>
+                        <p>Planejamento e análise estatística completa de um Teste A/B para validar uma mudança de
+                            layout em e-commerce. Resultado: recomendação baseada em dados com cálculo de significância
+                            e poder estatístico.</p>
+                        <div class="project-tools">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scipy</span>
+                            <span class="tag">Statsmodels</span>
+                            <span class="tag">Hypothesis Testing</span>
+                        </div>
+                        <a href="https://github.com/Thalesh7991/ab_test_eletronic_house/" target="_blank"
+                            class="btn btn-primary btn-sm">
+                            <i class="fab fa-github"></i> Ver projeto
+                        </a>
+                    </div>
+                </div>
 
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>Olá<span>,</span> Eu sou <br> Thales <br> Henrique<span>.</span>   </h2>
-							
-							<p>Data Scientist</p>
-							<a href="assets/download/curriculo_business.pdf" target="_blank">download currículo</a>
-							
-							<script src="assets/js/script.js"></script>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+            </div>
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+            <!-- Outros projetos -->
+            <div class="section-header section-header-sub">
+                <h3 class="section-title-sm">Outros Projetos</h3>
+            </div>
+            <div class="projects-grid">
 
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									Eu sou Cientista de Dados e o meu principal objetivo é desenvolver soluções inovadoras usando dados para que as empresas tomem melhores decisões.
-								</h3>
-								<p>
-									Sou um entusiasta de dados apaixonado por transformar números em narrativas significativas. Como Cientista de Dados, minha jornada é desvendar os segredos que os dados guardam, proporcionando insights valiosos que impulsionam a tomada de decisões inteligentes e estratégicas para as empresas. Com habilidades robustas em análise avançada e modelagem preditiva, estou sempre pronto para abraçar desafios e encontrar soluções inovadoras.
-								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>thalesh1997@gmail.com</p>
-										</div>
-									</div>
-									<div class="col-sm-4"></div>
-									
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											
-											<h3>LinkedIn</h3>
-											<p><a href='https://www.linkedin.com/in/thales-henrique-dias/'>https://www.linkedin.com/in/thales-henrique-dias/</a></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-		<!--education start -->
-		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2>education</h2>
-			</div>
-			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2015 - 2018</h2>
-									<h3>Bach. Interdisciplinar em Ciência e Técologia</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Universidade Federal do Pampa
-										</h4>
-										<h5>Rio Grande do Sul, BRA</h5>
-										<p class="description">
-											Sou Bacharel Interdisciplinar em Ciência e Tecnologia pela Universidade Federal do Pampa, formação essa que proporciona uma formação com foco na interdisciplinaridade e no diálogo entre áreas de conhecimento e entre componentes curriculares.
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2019 - 2022</h2>
-									<h3>Bach. Sistemas de Informação</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											UNESP
-										</h4>
-										<h5>São Paulo, BRA</h5>
-										<p class="description">
-											Sistemas de Informação é um curso que combina conhecimentos de tecnologia da informação, gestão e negócios. Os estudantes aprendem a projetar, desenvolver e gerenciar sistemas de informação para resolver problemas organizacionais, utilizando tecnologias avançadas.
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2022 - Atual</h2>
-									<h3>Aluno de Ciência de Dados</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal spacial-horizontal-line
-									"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Comunidade DS
-										</h4>
-										<h5>São Paulo, BRA</h5>
-										<p class="description">
-											A Comunidade DS é a maior comunidade de ensino aprendizagem de Ciencia de Dados do País. Nela aprendemos desenvolvendo projetos reais de ciência de dados end-to-end. Desde a concepção do problema de negócio até o deploy, bem como técnicas de storytelling.
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <a href="https://github.com/Thalesh7991/recommendation_system/tree/main" target="_blank"
+                    class="project-card">
+                    <img src="assets/images/portfolio/rec_sys.jpg" alt="Sistema de Recomendação">
+                    <div class="project-card-content">
+                        <h4>Sistema de Recomendação</h4>
+                        <p>Recomendação de produtos com Filtragem Colaborativa e Content-Based Filtering.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">Collaborative Filtering</span>
+                        </div>
+                    </div>
+                </a>
 
-		</section><!--/.education-->
-		<!--education end -->
+                <a href="https://github.com/Thalesh7991/churn_prediction" target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/churn_capa.png" alt="Predição de Churn">
+                    <div class="project-card-content">
+                        <h4>Predição de Churn</h4>
+                        <p>Modelo de classificação para identificar clientes com propensão a cancelamento.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">XGBoost</span>
+                        </div>
+                    </div>
+                </a>
 
-		<!--skills start -->
-		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2>skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">Ciência de Dados</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													  
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Programação</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Banco de Dados e SQL</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Compreensão de Negócios</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">Habilidades de Comunicação</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Pensamento Crítico e Resolução de Problemas</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>95%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Aprendizado Contínuo</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText"> Gestão de Projetos</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
-				</div><!-- /.skill-content-->
+                <a href="https://github.com/Thalesh7991/Rossmann-Sales-Predict" target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/sales.jpg" alt="Previsão de Faturamento">
+                    <div class="project-card-content">
+                        <h4>Previsão de Faturamento</h4>
+                        <p>Previsão de vendas das lojas Rossmann para as próximas 6 semanas com XGBoost.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">XGBoost</span>
+                        </div>
+                    </div>
+                </a>
 
-		</section><!--/.skills-->
-		<!--skills end -->
+                <a href="https://github.com/Thalesh7991/health-insurance-cross-sell" target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/money.png" alt="Propensão de Compra">
+                    <div class="project-card-content">
+                        <h4>Propensão de Compra</h4>
+                        <p>Learn to Rank para priorizar clientes com maior propensão a adquirir seguro veicular.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">LightGBM</span>
+                        </div>
+                    </div>
+                </a>
 
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2023 - Present</h2>
-													<h3>Cientista de Dados</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Radix Engenharia e Software
-														</h4>
-														<h5>Rio de Janeiro, BRA</h5>
-														<p class="description">
-															Atuo como Cientista de Dados desenvolvendo produtos de dados que melhores a tomada de decisão das empresas. Possuo experiência em grandes projetos para a PETROBRAS desenvolvendo modelos de Processamento de Linguagem Natural (NLP) na prevenção de acidentes de trabalho em Embarcações de Óleo e Gás. Possuo experiência em projeto internacional desenvolvendo produtos envolvendo LLM.  
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                <a href="https://github.com/Thalesh7991/elasticidade_preco/tree/master" target="_blank"
+                    class="project-card">
+                    <img src="assets/images/portfolio/elasticidade.jpg" alt="Elasticidade de Preço">
+                    <div class="project-card-content">
+                        <h4>Elasticidade de Preço</h4>
+                        <p>Análise de elasticidade-preço da demanda para otimização de estratégia de precificação.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">Econometria</span>
+                        </div>
+                    </div>
+                </a>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023 - Present
-													</h2>
-													<h3>Comunidade DS</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Comunidade DS
-														</h4>
-														<h5>São Paulo, BRA</h5>
-														<p class="description">
-															Atuo como professor do programa de pós graduação em Ciência de Dados da Comunidade DS. Meu principal objetivo é auxiliar alunos do programa de pós graduação nesse campo em constante evolução, capacitando-os com as habilidades técnicas e analíticas necessárias para se destacarem no mercado de trabalho.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023 - 2024
-													</h2>
-													<h3>Professor de Pós Graduação em Ciência de Dados </h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                <a href="https://github.com/Thalesh7991/delivery_fast" target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/delivery_ml.png" alt="Previsão de Tempo de Entrega">
+                    <div class="project-card-content">
+                        <h4>Previsão de Tempo de Entrega</h4>
+                        <p>Modelo de regressão para prever o tempo de entrega de pedidos em plataforma de delivery.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">Regressão</span>
+                        </div>
+                    </div>
+                </a>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2019 - 2023</h2>
-													<h3>Analista de Dados</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															CAIO INDUSCAR
-														</h4>
-														<h5>São Paulo, BRA</h5>
-														<p class="description">
-															Responsável por desenvolver análises de dados para diversas áreas da empresa como Vendas, PPCP, Marketing, Controladoria entre outras áreas. Ponto focal no desenvolvimento de análises de dados e elaboração de KPI's para monitoramento de métricas.
+                <a href="https://github.com/Thalesh7991/scraping_prefeitura" target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/wbs.png" alt="Monitoramento Legislativo">
+                    <div class="project-card-content">
+                        <h4>Monitoramento Legislativo</h4>
+                        <p>Web scraping e pipeline de dados para monitoramento automático de publicações legislativas.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">Web Scraping</span>
+                        </div>
+                    </div>
+                </a>
 
-														</p>
-														<br>
-														<p class="description">
-															Liderei importantes projetos na área de PPCP (Planejamento, Programação e Controle da Produção) que visavam o aprimoramento e a eficácia dos processos internos, fornecendo análises precisas e insights valiosos. Forneci insumos na tomada de decisões estratégicas, otimizando a programação de produção, garantindo um controle de estoque meticuloso e sinalizando com precisão as necessidades de aquisição de suprimentos.
-														</p>
-														<br>
-														<p class="description">
+                <a href="https://github.com/Thalesh7991/ensaios-algoritmos-ml" target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/ensaio.jpg" alt="Ensaio de Algoritmos">
+                    <div class="project-card-content">
+                        <h4>Ensaio de Algoritmos</h4>
+                        <p>Comparação sistemática de algoritmos de classificação, regressão e clusterização.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">Scikit-learn</span>
+                        </div>
+                    </div>
+                </a>
 
-															Desenvolvi projetos na área de vendas, buscando a identificação de gaps de mercado e na elaboração de estratégias baseadas em insights precisos. Monitoramento do faturamento e análise do comportamento de compra dos cliente, buscando otimizar as abordagens de venda e potencialização dos resultados comerciais da empresa.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+                <a href="https://www.linkedin.com/pulse/transformando-o-atendimento-ao-cliente-em-ti-com-de-m%2525C3%2525A1quina-henrique"
+                    target="_blank" class="project-card">
+                    <img src="assets/images/portfolio/nlp_tech.png" alt="NLP Atendimento ao Cliente">
+                    <div class="project-card-content">
+                        <h4>NLP — Atendimento ao Cliente</h4>
+                        <p>Sistema de recomendação para TI usando NLP para categorização automática de chamados.</p>
+                        <div class="project-tools">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">NLP</span>
+                        </div>
+                    </div>
+                </a>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2016 - 2018
-													</h2>
-													<h3>Pesquisador Bolsista</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Laboratório de Sistemas Inteligentes e Modelagem
-														</h4>
-														<h5>Rio Grande do Sul, BRA</h5>
-														<p class="description">
-															Integrante do Laboratório de Sistemas Inteligentes e Modelagem, onde desenvolvi projetos voltado para Sistemas Tutores Inteligentes. 
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2012 - 2013
-													</h2>
-													<h3>Pesquisador Bolsista</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+            </div>
+        </div>
+    </section>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+    <!-- ========== STACK TÉCNICA ========== -->
+    <section id="stack" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Habilidades</span>
+                <h2 class="section-title">Stack Técnica</h2>
+                <p class="section-subtitle">Tecnologias que uso no dia a dia para construir soluções de dados</p>
+            </div>
+            <div class="stack-grid">
 
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
+                <div class="stack-category">
+                    <div class="stack-category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Linguagens</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">R</span>
+                    </div>
+                </div>
 
-		</section><!--/.experience-->
-		<!--experience end -->
+                <div class="stack-category">
+                    <div class="stack-category-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning</h3>
+                    <div class="tags">
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">LightGBM</span>
+                        <span class="tag">SHAP</span>
+                        <span class="tag">MLflow</span>
+                    </div>
+                </div>
 
-		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>portfolio</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
+                <div class="stack-category">
+                    <div class="stack-category-icon"><i class="fas fa-list-ol"></i></div>
+                    <h3>Recomendação & Ranking</h3>
+                    <div class="tags">
+                        <span class="tag tag-accent">Collaborative Filtering</span>
+                        <span class="tag tag-accent">Content-Based</span>
+                        <span class="tag tag-accent">Learn to Rank</span>
+                        <span class="tag tag-accent">A/B Testing</span>
+                        <span class="tag tag-accent">Métricas de Engajamento</span>
+                    </div>
+                </div>
 
-							<!-- Row 1 -->
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/rec_sys.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/recommendation_system/tree/main">
-												Sistema de Recomendação de Produtos
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/data_architecture.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/ml-productization-journey">
-												Churn: Do Notebook à Produção
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/churn_capa.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/churn_prediction">
-												Predição de Churn
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-							</div><!-- /.row -->
+                <div class="stack-category">
+                    <div class="stack-category-icon"><i class="fas fa-database"></i></div>
+                    <h3>Dados</h3>
+                    <div class="tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Spark</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
 
-							<!-- Row 2 -->
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/clustering.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/Insiders-Customers">
-												Clusterização de Clientes
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/sales.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/Rossmann-Sales-Predict">
-												Previsão de Faturamento
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/test_ab_image.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/ab_test_eletronic_house/">
-												Teste A/B
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-							</div><!-- /.row -->
+                <div class="stack-category">
+                    <div class="stack-category-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Visualização</h3>
+                    <div class="tags">
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Plotly</span>
+                        <span class="tag">Metabase</span>
+                    </div>
+                </div>
 
-							<!-- Row 3 -->
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/money.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/health-insurance-cross-sell">
-												Propensão de Compra
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/elasticidade.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/elasticidade_preco/tree/master">
-												Elasticidade de Preço
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/delivery_ml.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/delivery_fast">
-												Previsão Tempo de Entrega
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-							</div><!-- /.row -->
+                <div class="stack-category">
+                    <div class="stack-category-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Deploy & DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
 
-							<!-- Row 4 -->
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/nlp_tech.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://www.linkedin.com/pulse/transformando-o-atendimento-ao-cliente-em-ti-com-de-m%2525C3%2525A1quina-henrique%3FtrackingId=di7ZtGYFTDeNMSk9covgIg%253D%253D/?trackingId=di7ZtGYFTDeNMSk9covgIg%3D%3D">
-												Sistema Recomendação
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/wbs.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/scraping_prefeitura">
-												Monitoramento Legislativo
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/ensaio.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://github.com/Thalesh7991/ensaios-algoritmos-ml">
-												Ensaio de Algoritmos
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div>
-							</div><!-- /.row -->
+            </div>
+        </div>
+    </section>
 
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
+    <!-- ========== EXPERIÊNCIA ========== -->
+    <section id="experiencia" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Trajetória</span>
+                <h2 class="section-title">Experiência Profissional</h2>
+            </div>
+            <div class="timeline">
 
-		</section><!--/.portfolio-->
-		<!--portfolio end -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Cientista de Dados</h3>
+                            <span class="timeline-date">2026 — Presente</span>
+                        </div>
+                        <h4 class="timeline-company">Frete.com · São Paulo, BRA</h4>
+                        <ul class="timeline-bullets">
+                            <li>Desenvolvimento de sistemas de recomendação de fretes para motoristas e de motoristas para fretes, em marketplace com 900 mil+ motoristas ativos</li>
+                            <li>Responsável por melhorar métricas de engajamento da plataforma: CTR, taxa de aceitação e qualidade dos matches driver–frete</li>
+                            <li>Aplicação de modelos de ranking e filtragem colaborativa para personalização do feed de fretes por perfil de motorista</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Cientista de Dados</h3>
+                            <span class="timeline-date">2023 — 2026</span>
+                        </div>
+                        <h4 class="timeline-company">Radix Engenharia e Software · Rio de Janeiro, BRA</h4>
+                        <ul class="timeline-bullets">
+                            <li>Desenvolvimento de modelos de dados para prevenção de acidentes de trabalho em embarcações de óleo e gás — PETROBRAS</li>
+                            <li>Desenvolvimento de produtos de dados em projeto internacional</li>
+                            <li>Construção de pipelines de dados e soluções end-to-end para tomada de decisão estratégica</li>
+                        </ul>
+                    </div>
+                </div>
 
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Thales Henrique</h3>
-										<p>Cientista de Dados</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>thalesh1997@gmail.com</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>LinkedIn</h3>
-											<p><a href='https://www.linkedin.com/in/thales-henrique-dias/'> https://www.linkedin.com/in/thales-henrique-dias/</a></p>
-										</div>
-									</div>
-								</div><!--/.contact-adress-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Professor de Pós-Graduação em Ciência de Dados</h3>
+                            <span class="timeline-date">2023 — 2024</span>
+                        </div>
+                        <h4 class="timeline-company">Comunidade DS · São Paulo, BRA</h4>
+                        <ul class="timeline-bullets">
+                            <li>Ensino de Ciência de Dados end-to-end para profissionais em transição de carreira</li>
+                            <li>Mentoria em projetos reais de Machine Learning e storytelling de dados</li>
+                        </ul>
+                    </div>
+                </div>
 
-		</section><!--/.contact-->
-		<!--contact end -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Analista de Dados</h3>
+                            <span class="timeline-date">2019 — 2023</span>
+                        </div>
+                        <h4 class="timeline-company">CAIO INDUSCAR · São Paulo, BRA</h4>
+                        <ul class="timeline-bullets">
+                            <li>Ponto focal de análise de dados para Vendas, PPCP, Marketing e Controladoria</li>
+                            <li>Liderança de projetos de otimização de produção e controle de estoque</li>
+                            <li>Desenvolvimento de KPIs e dashboards para monitoramento de métricas de negócio</li>
+                            <li>Identificação de gaps de mercado e estratégias baseadas em análise de comportamento de compra</li>
+                        </ul>
+                    </div>
+                </div>
 
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Pesquisador Bolsista</h3>
+                            <span class="timeline-date">2016 — 2018</span>
+                        </div>
+                        <h4 class="timeline-company">Laboratório de Sistemas Inteligentes e Modelagem · Rio Grande do Sul, BRA</h4>
+                        <ul class="timeline-bullets">
+                            <li>Pesquisa e desenvolvimento em Sistemas Tutores Inteligentes</li>
+                        </ul>
+                    </div>
+                </div>
 
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
+            </div>
+        </div>
+    </section>
 
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
+    <!-- ========== EDUCAÇÃO ========== -->
+    <section id="educacao" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Formação</span>
+                <h2 class="section-title">Educação</h2>
+            </div>
+            <div class="education-grid">
 
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
+                <div class="education-card">
+                    <div class="education-year">2022 — Presente</div>
+                    <h3>Pós-Graduação em Ciência de Dados</h3>
+                    <h4>Comunidade DS</h4>
+                    <p>Formação prática e end-to-end, com desenvolvimento de projetos reais do problema de negócio até o deploy em produção.</p>
+                </div>
 
-		<!-- for progress bar end -->
+                <div class="education-card">
+                    <div class="education-year">2019 — 2022</div>
+                    <h3>Bach. Sistemas de Informação</h3>
+                    <h4>UNESP · São Paulo, BRA</h4>
+                    <p>Formação que combina tecnologia da informação, gestão e negócios, com foco em projetar e desenvolver sistemas de informação.</p>
+                </div>
 
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+                <div class="education-card">
+                    <div class="education-year">2015 — 2018</div>
+                    <h3>Bach. Interdisciplinar em Ciência e Tecnologia</h3>
+                    <h4>Universidade Federal do Pampa · Rio Grande do Sul, BRA</h4>
+                    <p>Formação com foco em interdisciplinaridade e diálogo entre diferentes áreas do conhecimento.</p>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag section-tag-dark">Contato</span>
+                <h2 class="section-title section-title-dark">Vamos conversar?</h2>
+                <p class="section-subtitle section-subtitle-dark">Estou aberto a novas oportunidades e conversas sobre ciência de dados.</p>
+            </div>
+            <div class="contact-grid">
+
+                <a href="mailto:thalesh1997@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>E-mail</h3>
+                    <p>thalesh1997@gmail.com</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/thales-henrique-dias/" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/thales-henrique-dias</p>
+                </a>
+
+                <a href="https://github.com/Thalesh7991" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>github.com/Thalesh7991</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>Desenvolvido por <strong>Thales Henrique</strong> · 2024</p>
+        </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
 </html>
